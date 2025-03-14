@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudio de Biología - UNALM</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Biología - Universidad Nacional Agraria La Molina</h1>
+    </header>
+    
+    <main>
+        <section id="temario">
+            <h2>Temario del Examen</h2>
+            <ul>
+                <li><strong>Células:</strong>
+                    <ul>
+                        <li>¿Diferencias entre células procariotas y eucariotas?</li>
+                        <li>¿Funciones del núcleo, mitocondrias y cloroplastos?</li>
+                    </ul>
+                </li>
+                <li><strong>Genética:</strong>
+                    <ul>
+                        <li>Explicación de las leyes de Mendel</li>
+                        <li>Herencia ligada al sexo</li>
+                    </ul>
+                </li>
+                <li><strong>Evolución:</strong>
+                    <ul>
+                        <li>Teoría de selección natural de Darwin</li>
+                        <li>Evidencias de la evolución</li>
+                    </ul>
+                </li>
+                <li><strong>Ecología:</strong>
+                    <ul>
+                        <li>Niveles tróficos en la cadena alimentaria</li>
+                        <li>Importancia de la biodiversidad</li>
+                    </ul>
+                </li>
+                <li><strong>Metabolismo:</strong>
+                    <ul>
+                        <li>Fotosíntesis vs Respiración celular</li>
+                        <li>Fases de la fotosíntesis</li>
+                    </ul>
+                </li>
+                <li><strong>Taxonomía:</strong>
+                    <ul>
+                        <li>Clasificación de los seres vivos</li>
+                        <li>Criterios para clasificar especies</li>
+                    </ul>
+                </li>
+                <li><strong>Fisiología:</strong>
+                    <ul>
+                        <li>Principales sistemas de órganos en animales</li>
+                        <li>Transporte de agua y nutrientes en plantas</li>
+                    </ul>
+                </li>
+                <li><strong>Reproducción:</strong>
+                    <ul>
+                        <li>Diferencias entre reproducción sexual y asexual</li>
+                        <li>Importancia de la meiosis en la variabilidad genética</li>
+                    </ul>
+                </li>
+                <li><strong>Biotecnología:</strong>
+                    <ul>
+                        <li>ADN recombinante y aplicaciones en agricultura</li>
+                        <li>Clonación y sus implicancias éticas</li>
+                    </ul>
+                </li>
+                <li><strong>Biología Molecular:</strong>
+                    <ul>
+                        <li>Diferencia entre ADN y ARN</li>
+                        <li>Proceso de replicación del ADN</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section id="quiz">
+            <h2>Prueba tus conocimientos</h2>
+            <p id="pregunta">Haz clic en el botón para recibir una pregunta.</p>
+            <p id="respuesta"></p> 
+            <button onclick="generarPregunta()">Nueva Pregunta</button>
+
+            <h3>Pregunta extra:</h3>
+            <p id="pregunta-extra">Haz clic en el botón para recibir otra pregunta.</p>
+            <p id="respuesta-extra"></p>
+            <button onclick="generarPreguntaExtra()">Otra Pregunta</button>
+        </section>
+
+        <section id="pregunta-libre">
+            <h2>Haz tu propia pregunta</h2>
+            <input type="text" id="pregunta-usuario" placeholder="Escribe tu pregunta aquí...">
+            <button onclick="responderPregunta()">Preguntar</button>
+            <p id="respuesta-usuario"></p>
+        </section>
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
