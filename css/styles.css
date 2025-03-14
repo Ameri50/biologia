@@ -1,105 +1,101 @@
-/* General */
+/* ======= MODO OSCURO ======= */
+.dark-mode {
+    background-color: #121212 !important;
+    color: white !important;
+}
+
+.dark-mode section {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+.dark-mode .list-group-item {
+    background-color: #292929;
+    color: white;
+}
+
+.dark-mode a {
+    color: #66b2ff;
+}
+
+.dark-mode img {
+    border-color: white;
+}
+
+/* ======= ESTILOS GENERALES ======= */
 body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(135deg, #2E8B57, #20B2AA);
-    color: #fff;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
     text-align: center;
 }
 
-/* Encabezado */
+/* ======= HEADER ======= */
 header {
-    background: rgba(0, 0, 0, 0.7);
-    padding: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-h1 {
-    font-size: 2rem;
-    font-weight: bold;
-    letter-spacing: 1px;
-}
-
-/* Secciones */
-main {
-    padding: 20px;
-}
-
-section {
-    background: rgba(255, 255, 255, 0.2);
-    padding: 20px;
-    margin: 20px auto;
-    border-radius: 12px;
-    max-width: 800px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease;
-}
-
-section:hover {
-    transform: translateY(-5px);
-}
-
-/* Lista del temario */
-#temario ul {
-    list-style: none;
-    padding: 0;
-}
-
-#temario li {
-    background: rgba(0, 0, 0, 0.3);
-    margin: 10px 0;
-    padding: 12px;
-    border-radius: 8px;
-}
-
-/* Botones */
-button {
-    background: #FFD700;
-    color: #222;
-    border: none;
-    padding: 12px 18px;
-    font-size: 1rem;
-    font-weight: bold;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
-}
-
-button:hover {
-    background: #FFA500;
-    transform: scale(1.05);
-}
-
-/* Preguntas */
-#pregunta, #pregunta-extra, #respuesta, #respuesta-extra, #respuesta-usuario {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-top: 15px;
-}
-
-/* Input */
-input[type="text"] {
-    width: 80%;
-    padding: 10px;
-    margin-top: 10px;
-    border: 2px solid #fff;
-    border-radius: 6px;
     text-align: center;
-    font-size: 1rem;
+    justify-content: center;
+    position: relative;
+    padding: 20px;
 }
 
-input::placeholder {
-    color: #ddd;
+/* Botón del menú (izquierda) */
+header button:first-child {
+    position: absolute;
+    left: 20px;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    section {
-        max-width: 90%;
-    }
+/* Botón de modo oscuro (derecha) */
+#modo-btn {
+    position: absolute;
+    right: 20px;
+}
 
-    input[type="text"] {
-        width: 100%;
-    }
+/* ======= CONTENEDOR PRINCIPAL ======= */
+.container {
+    max-width: 900px;
+}
+
+/* ======= SECCIONES ======= */
+section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+/* ======= TÍTULOS ======= */
+h2, h3 {
+    color: #007bff;
+}
+
+/* ======= BOTONES ======= */
+button {
+    width: 200px;
+}
+
+/* ======= PREGUNTAS ======= */
+#pregunta, #pregunta-extra, #pregunta-usuario {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* ======= INPUT ======= */
+input {
+    text-align: center;
+}
+
+/* ======= RECURSOS ======= */
+#recursos .col-md-3 {
+    padding: 10px;
+}
+
+#recursos img {
+    width: 100%;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+#recursos img:hover {
+    transform: scale(1.05);
 }
