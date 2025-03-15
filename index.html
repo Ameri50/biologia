@@ -8,19 +8,39 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header class="d-flex align-items-center justify-content-between p-4 bg-primary text-white">
-        <div class="d-flex align-items-center">
-            <button class="btn btn-light me-3" type="button" data-bs-toggle="collapse" data-bs-target="#temario" aria-expanded="false" aria-controls="temario">
-                &#x22EE;
+    <!-- ======= MENÚ DE NAVEGACIÓN ======= -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Biología UNALM</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav" aria-controls="menuNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
+            <div class="collapse navbar-collapse" id="menuNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#videos">Videos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#temario">Temario</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#quiz">Prueba</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#recursos">Recursos</a></li>
+                </ul>
+            </div>
         </div>
+    </nav>
+
+    <!-- ======= ENCABEZADO ======= -->
+    <header class="d-flex align-items-center justify-content-between p-4 bg-primary text-white">
         <h1 class="m-0 text-center flex-grow-1">Biología - Universidad Nacional Agraria La Molina</h1>
         <button class="btn btn-light" id="modo-btn">Modo Oscuro</button>
     </header>
-    
+
     <main class="container mt-4">
-        <!-- Videos Educativos -->
-        <section id="videos" class="col-12">
+        <!-- ======= SECCIÓN SOBRE EL EXAMEN ======= -->
+        <section id="sobre-examen" class="col-12">
+            <h2>Sobre el Examen</h2>
+            <p>El examen de biología en la UNALM cubre temas fundamentales como células, genética, evolución, ecología y fisiología. Aquí encontrarás recursos educativos, videos y preguntas para reforzar tu aprendizaje.</p>
+        </section>
+
+        <!-- ======= VIDEOS EDUCATIVOS ======= -->
+        <section id="videos" class="col-12 mt-4">
             <h2>Videos Educativos</h2>
             <div class="row">
                 <div class="col-md-4">
@@ -87,59 +107,54 @@
             </ul>
         </section>
 
-        <!-- Preguntas de Prueba -->
+
+        <!-- ======= PRUEBA TUS CONOCIMIENTOS ======= -->
         <section id="quiz" class="col-12 mt-4">
             <h2>Prueba tus conocimientos</h2>
             <p id="pregunta">Haz clic en el botón para recibir una pregunta.</p>
             <p id="respuesta"></p>
             <button class="btn btn-primary" id="generar-pregunta">Nueva Pregunta</button>
-
-            <h3>Pregunta extra:</h3>
-            <p id="pregunta-extra">Haz clic en el botón para recibir otra pregunta.</p>
-            <p id="respuesta-extra"></p>
-            <button class="btn btn-secondary" id="generar-pregunta-extra">Otra Pregunta</button>
         </section>
 
-        <!-- Pregunta Libre -->
-        <section id="pregunta-libre" class="col-12 text-center mt-4">
-            <h2>Haz tu propia pregunta</h2>
-            <input type="text" id="pregunta-usuario" class="form-control w-50 mx-auto" placeholder="Escribe tu pregunta aquí...">
-            <button class="btn btn-success mt-2" id="buscar-respuesta">Preguntar</button>
-            <p id="respuesta-usuario"></p>
-        </section>
-
-        <!-- Recursos Adicionales -->
-        <section id="recursos" class="col-12 mt-4">
-            <h2>Recursos Adicionales</h2>
-            <div class="row">
-                <div class="col-md-3 text-center">
-                    <a href="https://matematicasn.blogspot.com/2019/04/biologia-examen-admision-agraria-unalm.html" target="_blank">
-                        <img src="img/Captura de pantalla 2025-03-14 182056.png" class="img-fluid rounded" alt="Recurso 1">
-                    </a>
-                    <p>Biología - Examen UNALM</p>
-                </div>
-                <div class="col-md-3 text-center">
-                    <a href="https://matematicasn.blogspot.com/2018/01/admision-agraria-2018-i-pdf-examen.html" target="_blank">
-                        <img src="img/2.png" class="img-fluid rounded" alt="Recurso 2">
-                    </a>
-                    <p>Examen de Admisión 2018</p>
-                </div>
-                <div class="col-md-3 text-center">
-                    <a href="https://www.studocu.com/pe/document/universidad-nacional-agraria-la-molina/biologia-general/preguntas-de-biologia-examen-admision/66653442" target="_blank">
-                        <img src="img/3.png" class="img-fluid rounded" alt="Recurso 3">
-                    </a>
-                    <p>Preguntas de Examen</p>
-                </div>
-                <div class="col-md-3 text-center">
-                    <a href="https://admision.lamolina.edu.pe/faq" target="_blank">
-                        <img src="img/4.png" class="img-fluid rounded" alt="FAQ Admisión">
-                    </a>
-                    <p>FAQ Admisión UNALM</p>
-                </div>
+       <!-- Recursos Adicionales -->
+       <section id="recursos" class="col-12 mt-4">
+        <h2>Recursos Adicionales</h2>
+        <div class="row">
+            <div class="col-md-3 text-center">
+                <a href="https://matematicasn.blogspot.com/2019/04/biologia-examen-admision-agraria-unalm.html" target="_blank">
+                    <img src="img/Captura de pantalla 2025-03-14 182056.png" class="img-fluid rounded" alt="Recurso 1">
+                </a>
+                <p>Biología - Examen UNALM</p>
             </div>
-        </section>
-    </main>
-    
+            <div class="col-md-3 text-center">
+                <a href="https://matematicasn.blogspot.com/2018/01/admision-agraria-2018-i-pdf-examen.html" target="_blank">
+                    <img src="img/2.png" class="img-fluid rounded" alt="Recurso 2">
+                </a>
+                <p>Examen de Admisión 2018</p>
+            </div>
+            <div class="col-md-3 text-center">
+                <a href="https://www.studocu.com/pe/document/universidad-nacional-agraria-la-molina/biologia-general/preguntas-de-biologia-examen-admision/66653442" target="_blank">
+                    <img src="img/3.png" class="img-fluid rounded" alt="Recurso 3">
+                </a>
+                <p>Preguntas de Examen</p>
+            </div>
+            <div class="col-md-3 text-center">
+                <a href="https://admision.lamolina.edu.pe/faq" target="_blank">
+                    <img src="img/4.png" class="img-fluid rounded" alt="FAQ Admisión">
+                </a>
+                <p>FAQ Admisión UNALM</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+    <!-- ======= PIE DE PÁGINA ======= -->
+    <footer class="text-center p-3 mt-4 bg-light">
+        <p>&copy; 2025 CREADO POR MOISES ROJAS. Todos los derechos reservados.</p>
+        <a href="https://www.lamolina.edu.pe/" target="_blank">Sitio Oficial UNALM</a>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/app.js"></script>
 </body>

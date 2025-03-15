@@ -1,101 +1,148 @@
-/* ======= MODO OSCURO ======= */
-.dark-mode {
-    background-color: #121212 !important;
-    color: white !important;
-}
-
-.dark-mode section {
-    background-color: #1e1e1e;
-    color: white;
-}
-
-.dark-mode .list-group-item {
-    background-color: #292929;
-    color: white;
-}
-
-.dark-mode a {
-    color: #66b2ff;
-}
-
-.dark-mode img {
-    border-color: white;
-}
-
-/* ======= ESTILOS GENERALES ======= */
+/* ======= CONFIGURACIÓN GENERAL ======= */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    text-align: center;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
 }
 
-/* ======= HEADER ======= */
+/* ======= MENÚ DE NAVEGACIÓN ======= */
+.navbar {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f8f9fa;
+    text-decoration: underline;
+}
+
+/* ======= ENCABEZADO ======= */
 header {
     text-align: center;
-    justify-content: center;
-    position: relative;
     padding: 20px;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
 }
 
-/* Botón del menú (izquierda) */
-header button:first-child {
-    position: absolute;
-    left: 20px;
-}
-
-/* Botón de modo oscuro (derecha) */
 #modo-btn {
-    position: absolute;
-    right: 20px;
+    background: #fff;
+    border: none;
+    padding: 8px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background 0.3s ease;
 }
 
-/* ======= CONTENEDOR PRINCIPAL ======= */
-.container {
-    max-width: 900px;
+#modo-btn:hover {
+    background: #e2e6ea;
 }
 
-/* ======= SECCIONES ======= */
+/* ======= SECCIONES GENERALES ======= */
 section {
-    background-color: white;
-    padding: 20px;
+    padding: 40px 20px;
+    background: white;
     border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     margin-bottom: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* ======= TÍTULOS ======= */
-h2, h3 {
-    color: #007bff;
+/* ======= VIDEOS ======= */
+.ratio {
+    border-radius: 10px;
+    overflow: hidden;
 }
 
-/* ======= BOTONES ======= */
-button {
-    width: 200px;
+/* ======= TEMARIO ======= */
+.list-group-item {
+    font-size: 1.1rem;
+    border: none;
+    background: #f1f1f1;
+    margin-bottom: 10px;
+    border-radius: 5px;
 }
 
-/* ======= PREGUNTAS ======= */
-#pregunta, #pregunta-extra, #pregunta-usuario {
-    font-weight: bold;
-    margin-top: 10px;
+/* ======= QUIZ (PRUEBA) ======= */
+#generar-pregunta {
+    display: block;
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
 }
 
-/* ======= INPUT ======= */
-input {
-    text-align: center;
+#generar-pregunta:hover {
+    background: #0056b3;
 }
 
 /* ======= RECURSOS ======= */
-#recursos .col-md-3 {
-    padding: 10px;
-}
-
 #recursos img {
     width: 100%;
-    border: 2px solid #007bff;
+    height: auto;
     border-radius: 10px;
-    transition: transform 0.3s;
+    transition: transform 0.3s ease;
 }
 
 #recursos img:hover {
     transform: scale(1.05);
+}
+
+#recursos p {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* ======= PIE DE PÁGINA ======= */
+footer {
+    background: #f8f8fa;
+    padding: 20px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* ======= MODO OSCURO ======= */
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode header {
+    background: #222;
+}
+
+.dark-mode section {
+    background: #444;
+    color: #ddd;
+}
+
+.dark-mode .list-group-item {
+    background: #555;
+}
+
+.dark-mode footer {
+    background: #222;
+}
+
+.dark-mode a {
+    color: #66b3ff;
 }
