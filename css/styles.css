@@ -1,148 +1,156 @@
-/* ======= CONFIGURACIÓN GENERAL ======= */
+/* ======= General Styles ======= */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f8f9fa;
+    font-family: 'Roboto', sans-serif;
+    background-color: #090808;
     color: #333;
+    margin: 0;
+    padding: 0;
     line-height: 1.6;
 }
 
-/* ======= MENÚ DE NAVEGACIÓN ======= */
+/* ======= Links ======= */
+a {
+    text-decoration: none;
+    color: #0c0d0d;
+}
+
+a:hover {
+    color: #0c0d0d;
+}
+
+/* ======= Navbar ======= */
+/* Black background and white text for navigation */
 .navbar {
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.navbar-brand {
-    font-weight: bold;
-    font-size: 1.5rem;
-}
-
-.navbar-nav .nav-link {
-    font-size: 1.1rem;
-    transition: color 0.3s ease;
+.navbar-brand, .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 1.2rem;
 }
 
 .navbar-nav .nav-link:hover {
-    color: #f8f9fa;
-    text-decoration: underline;
+    color: #d1ecf1;
 }
 
-/* ======= ENCABEZADO ======= */
+/* ======= Header ======= */
+/* Centered header with padding and background color */
 header {
-    text-align: center;
-    padding: 20px;
-    background: linear-gradient(135deg, #007bff, #0056b3);
+    padding: 40px 20px;
+    background-color: #131415;
     color: white;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0;
 }
 
 #modo-btn {
-    background: #fff;
-    border: none;
-    padding: 8px 15px;
-    font-size: 1rem;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #111;
     border-radius: 5px;
-    transition: background 0.3s ease;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 #modo-btn:hover {
-    background: #e2e6ea;
+    background-color: #ddd;
 }
 
-/* ======= SECCIONES GENERALES ======= */
+/* ======= Section Styling ======= */
 section {
-    padding: 40px 20px;
-    background: white;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* ======= VIDEOS ======= */
-.ratio {
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-/* ======= TEMARIO ======= */
-.list-group-item {
-    font-size: 1.1rem;
-    border: none;
-    background: #f1f1f1;
-    margin-bottom: 10px;
-    border-radius: 5px;
-}
-
-/* ======= QUIZ (PRUEBA) ======= */
-#generar-pregunta {
-    display: block;
-    width: 100%;
-    font-size: 1.2rem;
-    padding: 10px;
-    border-radius: 5px;
-    transition: background 0.3s ease;
-}
-
-#generar-pregunta:hover {
-    background: #0056b3;
-}
-
-/* ======= RECURSOS ======= */
-#recursos img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-}
-
-#recursos img:hover {
-    transform: scale(1.05);
-}
-
-#recursos p {
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-/* ======= PIE DE PÁGINA ======= */
-footer {
-    background: #f8f8fa;
+    margin: 20px auto;
     padding: 20px;
-    font-size: 1rem;
+    background: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.bg-primary {
+    --bs-bg-opacity: 1;
+    background-color: rgb(14, 15, 16) rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
+}
+
+h2 {
+    font-size: 1.75rem;
+    color: #333;
+}
+
+/* ======= Quiz Section ======= */
+#quiz input, #pregunta-usuario-section input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#quiz button, #pregunta-usuario-section button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+}
+
+#quiz button:hover, #pregunta-usuario-section button:hover {
+    background-color: #0056b3;
+}
+
+/* ======= Footer ======= */
+/* Black background and white text for the footer */
+footer {
+    background-color: #000;
+    color: #090808;
+    padding: 20px;
     text-align: center;
 }
 
+footer p {
+    margin-bottom: 5px;
+    color: #090808;
+}
+
 footer a {
-    text-decoration: none;
     color: #007bff;
-    font-weight: bold;
 }
 
 footer a:hover {
     text-decoration: underline;
 }
 
-/* ======= MODO OSCURO ======= */
-.dark-mode {
+/* ======= Dark Mode ======= */
+body.dark-mode {
+    background-color: #181818;
+    color: #050505;
+}
+
+body.dark-mode header, body.dark-mode footer {
+    background-color: #222;
+    color: #f4f4f9;
+}
+
+body.dark-mode section {
     background-color: #333;
-    color: #fff;
+    color: #f4f4f9;
 }
 
-.dark-mode header {
-    background: #222;
+body.dark-mode .navbar {
+    background-color: #000;
 }
 
-.dark-mode section {
-    background: #444;
-    color: #ddd;
+body.dark-mode #modo-btn {
+    background-color: #444;
+    color: #0a0a0c;
 }
 
-.dark-mode .list-group-item {
-    background: #555;
-}
-
-.dark-mode footer {
-    background: #222;
-}
-
-.dark-mode a {
-    color: #66b3ff;
+body.dark-mode #modo-btn:hover {
+    background-color: #666;
 }

@@ -51,8 +51,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Función para activar o desactivar el modo oscuro
     document.getElementById("modo-btn").addEventListener("click", function () {
-        document.body.classList.toggle("modo-oscuro");
-        if (document.body.classList.contains("modo-oscuro")) {
+        document.body.classList.toggle("dark-mode");
+        if (document.body.classList.contains("dark-mode")) {
             document.getElementById("modo-btn").innerText = "Modo Claro";
         } else {
             document.getElementById("modo-btn").innerText = "Modo Oscuro";
